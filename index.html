@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rashid Mobile Repairing - Premium mobile repairing and phone selling services. Expert technicians, quality parts, fast service in India.">
+    <meta name="keywords" content="mobile repair, phone repair, mobile unlocking, screen repair, battery replacement, sell phone, buy phone, accessories">
+    <meta name="author" content="Rashid Mobile Repairing">
+    <title>Rashid Mobile Repairing | Expert Mobile Repair & Phone Sales</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-mobile-alt"></i></span>
+                <span class="logo-text">Rashid <span class="highlight">Mobile Reapering</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#buy-phones" class="nav-link">Buy Phones</a></li>
+                <li><a href="#sell-phones" class="nav-link">Sell Phones</a></li>
+                <li><a href="#accessories" class="nav-link">Accessories</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="particles"></div>
+            <canvas id="hero-canvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Rashid Mobile</span>
+                    <br>Repairing Centre
+                </h1>
+                <p class="hero-subtitle">Premium Mobile Repair & Sales Services</p>
+                <p class="hero-description">Expert technicians, quality parts, fast service. We repair all brands of smartphones with warranty.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        <i class="fas fa-tools"></i> Our Services
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-phone-alt"></i> Contact Us
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5000">0</span>
+                        <span class="stat-label">Repairs Done</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="98">0</span>
+                        <span class="stat-label">% Happy Customers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-3d">
+                <div class="phone-3d" id="phone-3d">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="screen-content">
+                                <i class="fas fa-wrench"></i>
+                                <span>Repairing...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-icons">
+                    <i class="fas fa-screwdriver floating-icon" style="--delay: 0s;"></i>
+                    <i class="fas fa-microchip floating-icon" style="--delay: 1s;"></i>
+                    <i class="fas fa-battery-full floating-icon" style="--delay: 2s;"></i>
+                    <i class="fas fa-sim-card floating-icon" style="--delay: 3s;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#services">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">Professional mobile repair services for all brands</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <h3>Mobile Repairing</h3>
+                    <p>Expert repair for all smartphone brands including Apple, Samsung, OnePlus, Xiaomi, Vivo, Oppo, and more.</p>
+                    <span class="service-price">Starting</span>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Flashing & Software</h3>
+                    <p>Software issues, FRP bypass, OS upgrades, and custom ROM installation by experts.</p>
+                    <span class="service-price">Starting</span>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-unlock-alt"></i>
+                    </div>
+                    <h3>Unlocking</h3>
+                    <p>Network unlock, FRP unlock, pattern unlock, and all security locks removal.</p>
+                    <span class="service-price">Starting</span>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <h3>Screen Repair</h3>
+                    <p>Broken screen replacement with original quality displays for all smartphone models.</p>
+                    <span class="service-price">Starting</span>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-battery-half"></i>
+                    </div>
+                    <h3>Battery Replace</h3>
+                    <p>Original battery replacement with warranty. All models available - iPhone, Samsung, OnePlus & more.</p>
+                    <span class="service-price">Starting </span>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Water Damage</h3>
+                    <p>Professional water damage treatment and component-level repair for soaked devices.</p>
+                    <span class="service-price">Starting </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Phones Section -->
+    <section id="buy-phones" class="buy-phones">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Buy <span class="gradient-text">Phones</span></h2>
+                <p class="section-subtitle">Quality phones at best prices - New & Used</p>
+            </div>
+            <div class="phone-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="new">New</button>
+                <button class="filter-btn" data-filter="used">Used</button>
+            </div>
+            <div class="phones-grid" id="phones-grid">
+                <!-- Phones will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell Phones Section -->
+    <section id="sell-phones" class="sell-phones">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sell <span class="gradient-text">Phones</span></h2>
+                <p class="section-subtitle">Get instant cash for your old phone</p>
+            </div>
+            <div class="sell-form-container">
+                <form id="sell-phone-form" class="sell-form">
+                    <div class="form-group">
+                        <label for="seller-name">Your Name</label>
+                        <input type="text" id="seller-name" name="seller-name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="seller-phone">Phone Number</label>
+                        <input type="tel" id="seller-phone" name="seller-phone" required placeholder="Enter phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-brand">Phone Brand</label>
+                        <select id="phone-brand" name="phone-brand" required>
+                            <option value="">Select Brand</option>
+                            <option value="apple">Apple iPhone</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="oneplus">OnePlus</option>
+                            <option value="xiaomi">Xiaomi</option>
+                            <option value="vivo">Vivo</option>
+                            <option value="oppo">Oppo</option>
+                            <option value="realme">Realme</option>
+                            <option value="redmi">Redmi</option>
+                            <option value="poco">Poco</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-model">Phone Model</label>
+                        <input type="text" id="phone-model" name="phone-model" required placeholder="e.g., iPhone 13 Pro">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-condition">Condition</label>
+                        <select id="phone-condition" name="phone-condition" required>
+                            <option value="">Select Condition</option>
+                            <option value="excellent">Excellent - Like New</option>
+                            <option value="good">Good - Minor Scratches</option>
+                            <option value="fair">Fair - Visible Wear</option>
+                            <option value="damaged">Damaged - Not Working</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="expected-price">Expected Price (₹)</label>
+                        <input type="number" id="expected-price" name="expected-price" placeholder="Enter expected price">
+                    </div>
+                    <div class="form-group">
+                        <label for="seller-message">Additional Details</label>
+                        <textarea id="seller-message" name="seller-message" rows="4" placeholder="Describe any issues or accessories included..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Submit Details
+                    </button>
+                </form>
+                <div class="sell-info">
+                    <h3>Why Sell to Us?</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle"></i> Instant Cash Payment</li>
+                        <li><i class="fas fa-check-circle"></i> Free Doorstep Pickup</li>
+                        <li><i class="fas fa-check-circle"></i> Fair & Best Price</li>
+                        <li><i class="fas fa-check-circle"></i> Quick Process - Within 24 Hours</li>
+                        <li><i class="fas fa-check-circle"></i> Trusted & Secure</li>
+                    </ul>
+                    <div class="sell-promote">
+                        <i class="fas fa-tags"></i>
+                        <span>Also buy second-hand phones at cheap rates!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section id="accessories" class="accessories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Phone <span class="gradient-text">Accessories</span></h2>
+                <p class="section-subtitle">Quality accessories for your smartphone</p>
+            </div>
+            <div class="accessories-grid" id="accessories-grid">
+                <!-- Accessories will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Customer <span class="gradient-text">Reviews</span></h2>
+                <p class="section-subtitle">What our customers say about us</p>
+            </div>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Excellent service! My iPhone screen was broken and they fixed it within 2 hours. Very professional staff."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Khushi Alam</h4>
+                            <span>Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best mobile repair shop in the area! They unlocked my phone at a reasonable price. Highly recommended."</p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Asif Alam</h4>
+                            <span>Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Sold my old phone here at a good price. Very quick process and got paid instantly. Great service!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Shubham kumar</h4>
+                            <span>Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="gradient-text">Us</span></h2>
+                <p class="section-subtitle">Learn more about our business</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="years">10+</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Welcome to Rashid Mobile Repairing Centre</h3>
+                    <p>We are a trusted mobile repair and phone sales business serving customers for over 10 years. Our team of expert technicians specializes in repairing all brands of smartphones including Apple, Samsung, OnePlus, Xiaomi, Vivo, Oppo, and more.</p>
+                    <p>We pride ourselves on providing quality services at affordable prices. Whether you need a screen replacement, battery change, software issue fix, or want to buy/sell a phone, we've got you covered.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Expert Technicians</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Quality Parts</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Warranty on Repairs</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Fast Service</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Best Prices</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Doorstep Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+                <p class="section-subtitle">Get in touch with us</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p><br>Rashid Mobile Repairing
+Khairwa Bazar, Near Best Hospital
+Chauradano, East Champaran
+Bihar – 845302
+India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+91 7371002736<br>+91 9122899423</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>rashidmobile@gmail.com<br>Alamsamse737@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Working Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 9:00 PM<br>Sunday: 10:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0123456789!2d77.123456!3d28.654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM5JzE4LjYiTiA3N8KwMDcnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <div class="contact-buttons">
+                <a href="tel:+919876543210" class="contact-btn call-btn">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call Now</span>
+                </a>
+                <a href="https://wa.me/919876543210" class="contact-btn whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Rashid Mobile</span>
+                </div>
+                <p>Your trusted partner for mobile repair and phone sales services. Quality service at affordable prices.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#buy-phones">Buy Phones</a></li>
+                    <li><a href="#sell-phones">Sell Phones</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Mobile Repair</a></li>
+                    <li><a href="#services">Screen Repair</a></li>
+                    <li><a href="#services">Battery Replace</a></li>
+                    <li><a href="#services">Unlocking</a></li>
+                    <li><a href="#services">Software Issues</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul class="contact-info-list">
+                    <li><i class="fas fa-map-marker-alt"></i> Main Market, City Center</li>
+                    <li><i class="fas fa-phone-alt"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> rashidmobile@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rashid Mobile Repairing. All Rights Reserved.</p>
+            <p>Designed with <i class="fas fa-heart"></i> for Indian Businesses</p>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-header">
+            <i class="fas fa-comments"></i>
+            <span>Live Chat</span>
+            <button class="chat-close" id="chat-close">&times;</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-messages" id="chat-messages">
+                <div class="chat-message bot">
+                    <p>Hello! Welcome to Rashid Mobile Repairing! 👋</p>
+                    <p>How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="chat-toggle" id="chat-toggle">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- Admin Panel Toggle -->
+    <div class="admin-toggle" id="admin-toggle">
+        <i class="fas fa-cog"></i>
+    </div>
+
+    <!-- Admin Panel Modal -->
+    <div class="admin-modal" id="admin-modal">
+        <div class="admin-content">
+            <div class="admin-header">
+                <h2><i class="fas fa-admin"></i> Admin Panel</h2>
+                <button class="admin-close" id="admin-close">&times;</button>
+            </div>
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="products">Manage Products</button>
+                <button class="admin-tab" data-tab="accessories">Manage Accessories</button>
+            </div>
+            <div class="admin-body">
+                <div class="admin-panel active" id="products-panel">
+                    <h3>Add/Edit Phone</h3>
+                    <form id="product-form">
+                        <input type="text" id="product-name" placeholder="Phone Name" required>
+                        <input type="text" id="product-brand" placeholder="Brand" required>
+                        <input type="number" id="product-price" placeholder="Price (₹)" required>
+                        <select id="product-type" required>
+                            <option value="new">New</option>
+                            <option value="used">Used</option>
+                        </select>
+                        <input type="text" id="product-image" placeholder="Image URL">
+                        <textarea id="product-desc" placeholder="Description"></textarea>
+                        <button type="submit" class="btn btn-primary">Add Product</button>
+                    </form>
+                    <div class="product-list" id="product-list"></div>
+                </div>
+                <div class="admin-panel" id="accessories-panel">
+                    <h3>Add/Edit Accessory</h3>
+                    <form id="accessory-form">
+                        <input type="text" id="accessory-name" placeholder="Accessory Name" required>
+                        <input type="number" id="accessory-price" placeholder="Price (₹)" required>
+                        <select id="accessory-type" required>
+                            <option value="charger">Charger</option>
+                            <option value="earphone">Earphone</option>
+                            <option value="cover">Cover</option>
+                            <option value="tempered-glass">Tempered Glass</option>
+                            <option value="power-bank">Power Bank</option>
+                        </select>
+                        <input type="text" id="accessory-image" placeholder="Image URL">
+                        <button type="submit" class="btn btn-primary">Add Accessory</button>
+                    </form>
+                    <div class="accessory-list" id="accessory-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
